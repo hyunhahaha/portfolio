@@ -41,9 +41,20 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".title",
-  start: "top top",
-  end: "+=2000",
-  animation: gsap.to('.aboutme .title',{ scale: .6 }),
+  start: "top 30%",
+  end: "+=900",
+  animation: gsap.to('.aboutme .title',{ scale: .5 }),
+  pin: true,
+  scrub: true,
+});
+
+
+
+
+ScrollTrigger.create({
+  trigger: ".aboutme .text",
+  start: "top 30%",
+  end: "+=500",
   pin: true,
   scrub: true,
 });
