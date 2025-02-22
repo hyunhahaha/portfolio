@@ -90,9 +90,7 @@ body {
 
 .section02 {
   position: relative;
-  left: 50%;
-  top: 16%;
-  translate: -50% -50%;
+  height: 300vh;
 
   .bg_text{
     transform:scale(1)
@@ -101,8 +99,8 @@ body {
   .img{
     position: absolute;
     left: 50%;
-    top: 200%;
-    translate:-50% -50%;
+    top: 10%;
+    translate:-50% 0;
     width: 90%;
   }
 }
@@ -345,7 +343,7 @@ body {
 }
 
 .section03 {
-  height: 12000px;
+  height: 200vh;
   position: relative;
 }
 
