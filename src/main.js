@@ -42,24 +42,23 @@ const tween = gsap.to(".card_container li", {
 ScrollTrigger.create({
   trigger: ".title",
   start: "top 30%",
-  end: "+=600",
+  end: "+=800",
   animation: gsap.to('.aboutme .title',{ scale: .5 }),
   pin: true,
-  markers:true,
   scrub: true,
 });
 
 
 
+ScrollTrigger.create({
+  trigger: ".text",
+  start: "top 55%",
+  end: "+=150",
+  pin: true,
+  scrub: true,
+});
 
-// ScrollTrigger.create({
-//   trigger: ".aboutme .text",
-//   start: "top top",
-//   end: "+=500",
-//   pin: true,
-//   markers:true,
-//   scrub: true,
-// });
+
 
 
 
@@ -67,10 +66,11 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: ".bg_text",
   start: "top top",
-  end: "+=1500",
+  end: "+=3000",
   animation: gsap.to('.aboutme .title',{ scale: 1 }),
   pin: true,
   scrub: true,
+  markers:true,
 });
 
 

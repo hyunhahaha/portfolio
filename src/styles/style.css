@@ -16,6 +16,7 @@ body {
 .fix_section {
   height: 200vh;
 }
+
 .section01 .card_container {
   position: absolute;
   left: 50%;
@@ -34,147 +35,145 @@ body {
 .section1-1 {
   position: relative;
   height: 600vh;
-}
 
-.aboutme {
-  width: 100vw;
-  position: relative;
-
-  .title{
-    transform:scale(0.2)
+  .aboutme {
+    width: 100vw;
+    position: relative;
+  
+    .title{
+      transform:scale(0.2)
+    }
+  
+    .text{
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, 0);
+    }
+  
   }
 
-  .sub{
-    width: 10%;
-  }
-
-  .text{
-    width: 50%;
+  .keyword {
     position: absolute;
     left: 50%;
-    top: 90%;
-    translate:-50% -50%;
-    .title{
-      transform:scale(1)
-    }
+    top: 35%;
+    translate: -50% 0;
+    width: 20%;
+  }
+  
+  .color {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;  
   }
 
-}
-
-
-
-.keyword {
-  position: absolute;
-  left: 50%;
-  top: 55%;
-  translate: -50% 0;
-  width: auto;
-}
-
-.color {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.color img {
-  width: auto;
 }
 
 
 
 .section02 {
   position: relative;
-  height: 300vh;
+  height: 800vh;
+  background-color: #fff;
 
   .bg_text{
     transform:scale(1)
   }
 
-  .img{
+  .img6{
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 40%;
     translate:-50% 0;
     width: 90%;
   }
-}
+
+  .career_list{
+    .line{
+      position: absolute;
+      left: 50%;
+      top: 80%;
+      translate: -50% -50%;
+      width: 96%;
+    }
+
+    .career_text{
+      position: absolute;
+      left: 8.1%;
+      top: 71.3%;
+      translate: -50% -50%;
+      width: 5.5%;
+         }
+
+    .career_2018{
+      position: absolute;
+      right: -3.5%;
+      top: 70.8%;
+      translate: -50% 0;
+      width: 18%;
+    }
+         
+    } 
+
+      
+        .yumi{
+          position: absolute;
+          top: 72.05%;
+          left: 5%;
+          width: auto;
+        }
+
+        .period_202408{
+          position: absolute;
+          top: 72.2%;
+          left: 20%;
+          width: auto;
+        }
+
+        .period_ing{
+          position: absolute;
+          top: 72.9%;
+          left: 25%;
+          width: auto;
+        }
+
+        .fourcompany{
+          position: absolute;
+          top: 72.2%;
+          left: 35%;
+          width: auto;
+        }
+
+        .period_6month{
+          position: absolute;
+          top: 74.2%;
+          left: 35%;
+        }
+
+        .fourcompany_1234{
+          position: absolute;
+          top: 72.2%;
+          left: 60%;
+        }
+
+
+        .rank{
+          position: absolute;
+          top: 74.3%;
+          right: 29%;
+        }
+    }
+
+  
 
 
 
-.career img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 57%;
-  translate: -50% -50%;
-  width: 100%;
-  height: auto;
-}
-
-.career_text img:nth-child(1) {
-  position: absolute;
-  left: 5%;
-  top: 44%;
-  translate: 0% -50%;
-  width: 5%;
-}
-
-.career_text img:nth-child(2) {
-  position: absolute;
-  left: 77%;
-  top: 44%;
-  translate: 0% -50%;
-  width: 20%;
-}
-
-.fourcompany img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 48%;
-}
-
-.fourcompany img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 47%;
-}
-
-.fourcompany img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 48%;
-}
-
-.fourcompany img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 49%;
-}
-
-.fourcompany img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 47%;
-}
-
-.fourcompany .fourcompany_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 47%;
-}
-
-.mediquitous img:nth-child(1) {
+/* .mediquitous img:nth-child(1) {
   position: absolute;
   width: auto;
   left: 10%;
@@ -340,12 +339,18 @@ body {
   width: auto;
   left: 60%;
   top: 65%;
-}
+} */
+
+
+
+
+
 
 .section03 {
-  height: 200vh;
+  height: 600vh;
   position: relative;
-}
+  background-color: #050505;
+
 
 .promotion img:nth-child(1) {
   position: absolute;
@@ -354,112 +359,38 @@ body {
   translate: -50% -50%;
 }
 
-/* .promotion img:nth-child(2) {
-  width: 36%;
-  position: absolute;
-  left: 50%;
-  top: 4.2%;
-  translate: -50% -50%;
-}
-
-.promotion img:nth-child(3) {
-  width: 20%;
-  position: absolute;
-  left: 16%;
-  top: 4.2%;
-  translate: -50% -50%;
-} */
 
 .micro img:nth-child(1) {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 45%;
   translate: -50% -50%;
 }
 
-/* .micro img:nth-child(2) {
-  width: 22%;
-  position: absolute;
-  left: 50%;
-  top: 17%;
-  translate: -50% -50%;
-}
-
-.micro img:nth-child(3) {
-  width: 23%;
-  position: absolute;
-  left: 16%;
-  top: 17%;
-  translate: -50% -50%;
-} */
 
 .website img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  translate: -50% -50%;
-}
-
-/* .website img:nth-child(2) {
-  width: 22%;
-  position: absolute;
-  left: 50%;
-  top: 27.5%;
-  translate: -50% -50%;
-}
-
-.website img:nth-child(3) {
-  width: 23%;
-  position: absolute;
-  left: 16%;
-  top: 27.5%;
-  translate: -50% -50%;
-} */
-
-.mobileapp img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-}
-
-/* .mobileapp img:nth-child(2) {
-  width: 42%;
-  position: absolute;
-  left: 50%;
-  top: 38.3%;
-  translate: -50% -50%;
-}
-
-.mobileapp img:nth-child(3) {
-  width: 20%;
-  position: absolute;
-  left: 16%;
-  top: 38%;
-  translate: -50% -50%;
-} */
-
-.portfolio img:nth-child(1) {
   position: absolute;
   left: 50%;
   top: 60%;
   translate: -50% -50%;
 }
 
-/* .portfolio img:nth-child(2) {
-  width: 38%;
+
+.mobileapp img:nth-child(1) {
   position: absolute;
   left: 50%;
-  top: 48%;
+  top: 75%;
   translate: -50% -50%;
 }
 
-.portfolio img:nth-child(3) {
-  width: 20%;
+
+.portfolio img:nth-child(1) {
   position: absolute;
-  left: 16%;
-  top: 48%;
+  left: 50%;
+  top: 90%;
   translate: -50% -50%;
-} */
+}
+}
+
 
 
