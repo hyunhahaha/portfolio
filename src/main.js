@@ -10,68 +10,79 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 // ,Draggable,MotionPathPlugin
 
-let end = gsap.utils.distribute({
+let left = gsap.utils.distribute({
   base: 0,
-  amount: 350,
-  ease: "power3.inOut",
-  to: "center",
+  amount: 990,
+  // from: "center",
+  // to: "center",
 });
 
-const tween = gsap.to(".card_container li", {
-  stagger: {
-    from: "center",
-    each: 0.05,
-  },
-  x: 1000,
+let right = gsap.utils.distribute({
+  base: -990,
+  amount: 990,
+  // from: "center",
+  // to: "center",
 });
 
-// const tween = gsap.to('.card_container li',{ x: 100 })
 
-// ScrollTrigger.create({
-//   trigger: ".section01",
-//   start: "top top",
-//   end: "+=3000",
-//   animation: tween,
-//   pin: true,
-//   scrub: true,
-// });
+const tl = gsap.timeline();
+
+tl.from('.card_container .left',{ x: left })
+tl.from('.card_container .right',{ x: right },'<')
+ 
 
 
 
 
+
+/* 카드 고정시키기 & About 커지기 */
 ScrollTrigger.create({
-  trigger: ".title",
-  start: "top 30%",
-  end: "+=600",
-  animation: gsap.to('.aboutme .title',{ scale: .5 }),
+  trigger: ".card_container",
+  start: "2600px top",
+  end: "+=1300",
+  // markers:true,
+  animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   pin: true,
+  scrub: true,
+});
+ 
+
+
+/* 첫 번째 카드 모으기 */
+ScrollTrigger.create({
+  trigger: ".scene01",
+  start: "top top",
+  end: "+=3000",
+  animation: tl,
+  // markers:true,
+  pin: true,
+  scrub: true,
+});
+
+
+
+
+/* 카테고리 고정시키기 */
+ScrollTrigger.create({
+  trigger: ".category",
+  start: "top center",
+  end: "+=1500",
+  pin: true,
+  // markers:true,
+  scrub: true,
+});
+
+
+/* 카테고리 고정시키기 */
+ScrollTrigger.create({
+  trigger: ".section01",
+  start: "80%",
+  end: "+=1000",
+  animation:gsap.to('.title',{filter:'blur(10px)', x:'50%',autoAlpha:0}),
   markers:true,
   scrub: true,
 });
 
-
-
-
-// ScrollTrigger.create({
-//   trigger: ".aboutme .text",
-//   start: "top top",
-//   end: "+=500",
-//   pin: true,
-//   markers:true,
-//   scrub: true,
-// });
-
-
-
-
-ScrollTrigger.create({
-  trigger: ".bg_text",
-  start: "top top",
-  end: "+=1500",
-  animation: gsap.to('.aboutme .title',{ scale: 1 }),
-  pin: true,
-  scrub: true,
-});
 
 
 

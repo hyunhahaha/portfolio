@@ -6,10 +6,19 @@ body {
   overflow: hidden;
 }
 
+.title{
+  position: fixed;
+  left: 50%;
+  transform:translateX(-50%) scale(0.2);
+  bottom: 0;
+  z-index: 10000;
+  pointer-events: none;
+}
 .section01 {
   position: relative;
   background-color: black;
   overflow: hidden;
+  height: 800vh;
   /* height: 4200px; */
 }
 
@@ -20,21 +29,40 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 55%;
-  align-items: center;
-  width: 2282px;
-  display: flex;
+  top: 10%;
+  width: 326px;
+  height: 285px;
+  /* align-items: center; */
+  /* width: 2282px; */
+  /* display: flex; */
 
   li {
     flex-shrink: 0;
     flex-grow: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
-.section1-1 {
-  position: relative;
-  height: 600vh;
+.scene02{
+  padding-top: 50rem;
 }
+.scene02 .text{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 80rem;
+  
+}
+
+
+.category{
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  margin: 0 auto;
+}
+
 
 .aboutme {
   width: 100vw;
