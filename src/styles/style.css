@@ -10,10 +10,12 @@ body {
   position: fixed;
   left: 50%;
   transform:translateX(-50%) scale(0.2);
-  bottom: 0;
+  bottom: -1%;
+  width: 36%;
   z-index: 10000;
   pointer-events: none;
 }
+
 .section01 {
   position: relative;
   background-color: black;
@@ -29,7 +31,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
+  top: 7%;
   width: 326px;
   height: 285px;
   /* align-items: center; */
@@ -50,7 +52,8 @@ body {
 }
 .scene02 .text{
   text-align: center;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 50%;
   margin: 0 auto 80rem;
   
 }
@@ -77,10 +80,10 @@ body {
   }
 
   .text{
-    width: 50%;
+    width: 30%;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 120%;
     translate:-50% -50%;
     .title{
       transform:scale(1)
@@ -89,7 +92,11 @@ body {
 
 }
 
-
+.section1-1{
+  background-color: #050505;
+  height: 300vh;
+  padding-bottom: 500px;
+}
 
 .keyword {
   position: absolute;
@@ -102,16 +109,11 @@ body {
 .color {
   position: absolute;
   left: 50%;
-  top: 70%;
-  transform: translateX(-50%);
+  top: 50%;
+  translate:-50% -50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
-}
-
-.color img {
-  width: auto;
+  width: 90%;
 }
 
 
@@ -127,7 +129,7 @@ body {
   .img{
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 50%;
     translate:-50% 0;
     width: 90%;
   }
@@ -138,9 +140,9 @@ body {
 .career img:nth-child(1) {
   position: absolute;
   left: 50%;
-  top: 57%;
-  translate: -50% -50%;
-  width: 100%;
+  top: 180%;
+  translate: -50% 0%;
+  width: 96%;
   height: auto;
 }
 
@@ -371,8 +373,8 @@ body {
 }
 
 .section03 {
-  height: 200vh;
-  position: relative;
+  height: 400vh;
+  background-color: white;
 }
 
 .promotion img:nth-child(1) {

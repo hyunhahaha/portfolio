@@ -38,10 +38,26 @@ tl.from('.card_container .right',{ x: right },'<')
 /* 카드 고정시키기 & About 커지기 */
 ScrollTrigger.create({
   trigger: ".card_container",
-  start: "2600px top",
-  end: "+=1300",
+  start: "2800px top",
+  end: "+=1100",
   // markers:true,
   animation:gsap.to('.title',{ scale:1,y:'-400%' }),
+  pin: true,
+  scrub: true,
+});
+
+
+
+
+
+
+
+ScrollTrigger.create({
+  trigger: ".text",
+  start: "2550px top",
+  end: "+=1300",
+  // markers:true,
+  // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   pin: true,
   scrub: true,
 });
@@ -76,10 +92,22 @@ ScrollTrigger.create({
 /* 카테고리 고정시키기 */
 ScrollTrigger.create({
   trigger: ".section01",
+  start: "100%",
+  end: "+=1600",
+  animation:gsap.to('.title',{filter:'blur(10px)',autoAlpha:0}),
+  // markers:true,
+  scrub: true,
+});
+
+
+
+/* 카테고리 고정시키기 */
+ScrollTrigger.create({
+  trigger: ".section01",
   start: "80%",
   end: "+=1000",
-  animation:gsap.to('.title',{filter:'blur(10px)', x:'50%',autoAlpha:0}),
-  markers:true,
+  animation:gsap.to('.text',{filter:'blur(10px)', x:'50%',autoAlpha:0}),
+  // markers:true,
   scrub: true,
 });
 
@@ -87,6 +115,17 @@ ScrollTrigger.create({
 
 
 
+
+
+ScrollTrigger.create({
+  trigger: ".bg_text",
+  start: "20px top",
+  end: "+=3000",
+  markers:true,
+  // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
+  pin: true,
+  scrub: true,
+});
 
 
 
