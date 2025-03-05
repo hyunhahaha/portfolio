@@ -10,10 +10,12 @@ body {
   position: fixed;
   left: 50%;
   transform:translateX(-50%) scale(0.2);
-  bottom: 0;
+  bottom: -1%;
+  width: 36%;
   z-index: 10000;
   pointer-events: none;
 }
+
 .section01 {
   position: relative;
   background-color: black;
@@ -30,7 +32,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 10%;
+  top: 7%;
   width: 326px;
   height: 285px;
   /* align-items: center; */
@@ -51,7 +53,8 @@ body {
 }
 .scene02 .text{
   text-align: center;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 50%;
   margin: 0 auto 80rem;
   
 }
@@ -65,42 +68,54 @@ body {
 }
 
 
-  .aboutme {
-    width: 100vw;
-    position: relative;
-  
+.aboutme {
+  width: 100vw;
+  position: relative;
+
+  .title{
+    transform:scale(0.2)
+  }
+
+  .sub{
+    width: 10%;
+  }
+
+  .text{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    translate:-50% -50%;
     .title{
-      transform:scale(0.2)
+      transform:scale(1)
     }
-  
-    .text{
-      width: 50%;
-      position: absolute;
-      left: 50%;
-      top: 90%;
-      transform: translate(-50%, 0);
-    }
-  
   }
 
-  .keyword {
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    translate: -50% 0;
-    width: 20%;
-  }
-  
-  .color {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 70%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px;  
-  }
+}
 
+
+
+.keyword {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  translate: -50% 0;
+  width: auto;
+}
+
+.color {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.color img {
+  width: auto;
 }
 
 
@@ -117,19 +132,21 @@ body {
   .img6{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 10%;
     translate:-50% 0;
     width: 90%;
   }
 
-  .career_list{
-    .line{
-      position: absolute;
-      left: 50%;
-      top: 80%;
-      translate: -50% -50%;
-      width: 96%;
-    }
+
+
+.career img:nth-child(1) {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  translate: -50% -50%;
+  width: 100%;
+  height: auto;
+}
 
     .career_text{
       position: absolute;
@@ -376,10 +393,9 @@ body {
 
 
 .section03 {
-  height: 600vh;
+  height: 200vh;
   position: relative;
-  background-color: #050505;
-
+}
 
 .promotion img:nth-child(1) {
   position: absolute;
