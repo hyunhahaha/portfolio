@@ -57,11 +57,24 @@ ScrollTrigger.create({
   start: "2550px top",
   end: "+=1300",
   // markers:true,
-  // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
+  
   pin: true,
   scrub: true,
 });
- 
+
+
+
+// /* 카테고리 고정시키기 */
+// ScrollTrigger.create({
+//   trigger: ".section01",
+//   start: "80%",
+//   end: "+=1000",
+//   animation:gsap.to('.text',{filter:'blur(10px)',autoAlpha:0}),
+//   // markers:true,
+//   scrub: true,
+// });
+
+
 
 
 /* 첫 번째 카드 모으기 */
@@ -101,17 +114,21 @@ ScrollTrigger.create({
 
 
 
-/* 카테고리 고정시키기 */
+
+
+
+
+/* section1-1 card animation  */
+
 ScrollTrigger.create({
-  trigger: ".section01",
-  start: "80%",
-  end: "+=1000",
-  animation:gsap.to('.text',{filter:'blur(10px)', x:'50%',autoAlpha:0}),
+  trigger: ".section1-1",
+  start: "top top",
+  end: "+=1300",
   // markers:true,
+  animation:gsap.to('.color > li',{stagger:0.1, filter:'blur(0)',y:0, opacity:1 }),
+  pin: true,
   scrub: true,
 });
-
-
 
 
 
@@ -119,16 +136,14 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".bg_text",
-  start: "20px top",
+  start: "top top",
   end: "+=3000",
   markers:true,
   // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
+  // pinSpacing:false,
   pin: true,
   scrub: true,
 });
-
-
-
 
 
 

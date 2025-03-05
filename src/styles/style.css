@@ -20,7 +20,7 @@ body {
   position: relative;
   background-color: black;
   overflow: hidden;
-  height: 800vh;
+  height: 1000vh;
   /* height: 4200px; */
 }
 
@@ -109,33 +109,78 @@ body {
 .color {
   position: absolute;
   left: 50%;
-  top: 50%;
-  translate:-50% -50%;
+  top: 10%;
+  translate:-50% 0;
   display: flex;
   gap: 20px;
   width: 90%;
+}
+
+.color > li{
+  opacity: 0;
+  filter: blur(5px);
+  transform:translateY(200px)
+}
+.color > li:nth-child(2){
+  margin-top: 3rem;
+}
+
+
+.color > li:nth-child(4){
+  margin-top: 13rem;
 }
 
 
 
 .section02 {
   position: relative;
-  height: 300vh;
+  height: 600vh;
 
   .bg_text{
-    transform:scale(1)
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .img{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    translate:-50% 0;
+    left: 0;
+    top: 0;
     width: 90%;
   }
 }
 
 
+.career{
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+
+  ul{
+
+
+    li{
+      
+
+      display: flex;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+
+      .left{
+        flex: 1;
+        height: 300px;
+        border-right: 1px solid black;
+      }
+
+      .right{
+        flex: 2;
+        height: 300px;
+      }
+    }
+  }
+}
 
 .career img:nth-child(1) {
   position: absolute;
