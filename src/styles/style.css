@@ -64,20 +64,22 @@ body {
   height: 500px;
   background-color: green;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  li{
+    width: 30%;
+  }
 }
 
 
-.aboutme {
-  width: 100vw;
+.body {
   position: relative;
 
   .title{
     transform:scale(0.2)
   }
 
-  .sub{
-    width: 10%;
-  }
 
   .text{
     width: 30%;
@@ -94,8 +96,8 @@ body {
 
 .section1-1{
   background-color: #050505;
-  height: 300vh;
-  padding-bottom: 500px;
+  height: 200vh;
+  padding-bottom: 300px;
 }
 
 .keyword {
@@ -121,48 +123,75 @@ body {
   filter: blur(5px);
   transform:translateY(200px)
 }
+
+
 .color > li:nth-child(2){
-  margin-top: 3rem;
+  margin-top: 16rem;
+}
+
+
+.color > li:nth-child(3){
+  margin-top: 2rem;
 }
 
 
 .color > li:nth-child(4){
-  margin-top: 13rem;
+  margin-top: 20rem;
 }
+
+
+.color > li:nth-child(5){
+  margin-top: 3rem;
+}
+
+
 
 
 
 .section02 {
   position: relative;
-  height: 600vh;
+  height: 720vh;
+  background-color: #fff;
 
-  .bg_text{
+
+  .img_6{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    translate:-50% -50%;
+    width: 90%;
+  }
+}
+
+
+.career_container{
+  .career_text{
+    position: absolute;
+    width: auto;
+    top: 5690px;
+    left: 80px;
   }
 
-  .img{
+  .career_date{
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 90%;
+    width: auto;
+    top: 5640px;
+    right: 80px;
   }
 }
 
 
 .career{
   width: 100vw;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
+  margin-top: 300px;
   
 
   ul{
 
-
     li{
-      
 
       display: flex;
       border-top: 1px solid black;
@@ -170,371 +199,436 @@ body {
 
       .left{
         flex: 1;
-        height: 300px;
+        height: 280px;
         border-right: 1px solid black;
       }
 
       .right{
         flex: 2;
-        height: 300px;
+        height: 280px;
       }
     }
   }
 }
 
-.career img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 180%;
-  translate: -50% 0%;
-  width: 96%;
-  height: auto;
+
+
+
+.career .left_01{
+  .fc_img {
+    position: absolute;
+    width: auto;
+    left: 80px;
+    top: 52px;
+  }
+  
+  
+  .fc_202408 {
+    position: absolute;
+    width: auto;
+    left: 400px;
+    top: 58px;
+  }
+  
+  
+  .fc_ing {
+    position: absolute;
+    width: auto;
+    left: 476px;
+    top: 109px;
+  }
 }
 
-.career_text img:nth-child(1) {
-  position: absolute;
-  left: 5%;
-  top: 44%;
-  translate: 0% -50%;
-  width: 5%;
+
+.section02 .career .right_01{
+
+  .fourcompany {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 58px;
+  }
+  
+  
+  .fc_6month {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 201px;
+  }
+
+  .fourcompany_01{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 50px;
+  }
+
+  .fourcompany_02{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 92px;
+  }
+
+  .fourcompany_03{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 132px;
+  }
+
+  .fourcompany_04{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 172px;
+  }
+
+  .fc_rank {
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 222px;
+  }
 }
 
-.career_text img:nth-child(2) {
-  position: absolute;
-  left: 77%;
-  top: 44%;
-  translate: 0% -50%;
-  width: 20%;
+
+.section02 .career .left_02{
+  .mq_img {
+    position: absolute;
+    width: auto;
+    left: 80px;
+    top: 342px;
+  }
+
+
+  .mq_202203 {
+    position: absolute;
+    width: auto;
+    left: 400px;
+    top: 342px;
+  }
+  
+  
+  .mq_202408 {
+    position: absolute;
+    width: auto;
+    left: 375px;
+    top: 397px;
+  }
+
+    .fourcompany {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 58px;
+  }
+  
+  
+  .month_6 {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 201px;
+  }
 }
 
-.fourcompany img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 48%;
+
+.section02 .career .right_02{
+
+  .mediquitous {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 342px;
+  }
+  
+  
+  .mq_2year {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 491px;
+  }
+
+
+  .mediquitous_01{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 342px;
+  }
+
+  .mediquitous_02{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 382px;
+  }
+
+  .mediquitous_03{
+    position: absolute;
+    width: auto;
+    left: 1355px;
+    top: 422px;
+  }
+
+  .mediquitous_04{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 462px;
+  }
+
+  .mq_rank{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 512px;
+  }
 }
 
-.fourcompany img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 47%;
+
+
+.section02 .career .left_03{
+  .btg_img {
+    position: absolute;
+    width: auto;
+    left: 80px;
+    top: 642px;
+  }
+  
+  
+  .btg_202108 {
+    position: absolute;
+    width: auto;
+    left: 400px;
+    top: 645px;
+  }
+  
+  
+  .btg_202201 {
+    position: absolute;
+    width: auto;
+    left: 375px;
+    top: 700px;
+  }
 }
 
-.fourcompany img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 48%;
+
+.career .right_03{
+
+  .btg {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 640px;
+  }
+  
+  
+  .btg_6month {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 780px;
+  }
+
+  .btg_01{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 640px;
+  }
+
+  .btg_02{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 680px;
+  }
+
+  .btg_03{
+    position: absolute;
+    width: auto;
+    left: 1312px;
+    top: 720px;
+  }
+
+  .btg_rank {
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 774px;
+  }
 }
 
-.fourcompany img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 49%;
+
+
+.section02 .career .left_04{
+  .tis_img {
+    position: absolute;
+    width: auto;
+    left: 80px;
+    top: 942px;
+  }
+  
+  
+  .tis_202012 {
+    position: absolute;
+    width: auto;
+    left: 400px;
+    top: 945px;
+  }
+  
+  
+  .tis_202108 {
+    position: absolute;
+    width: auto;
+    left: 375px;
+    top: 1000px;
+  }
 }
 
-.fourcompany img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 47%;
+
+.career .right_04{
+
+  .bonne {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 940px;
+  }
+  
+  
+  .bonne_9month {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 1080px;
+  }
+
+  .bonne_01{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 940px;
+  }
+
+  .bonne_02{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 980px;
+  }
+
+  .bonne_03{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1020px;
+  }
+
+  .bonne_04{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1060px;
+  }
+
+  .bonne_rank {
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1110px;
+  }
 }
 
-.fourcompany .fourcompany_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 47%;
+
+
+.section02 .career .left_05{
+  .dk_img {
+    position: absolute;
+    width: auto;
+    left: 80px;
+    top: 1242px;
+  }
+  
+  
+  .dk_201803 {
+    position: absolute;
+    width: auto;
+    left: 400px;
+    top: 1242px;
+  }
+  
+  
+  .dk_202004 {
+    position: absolute;
+    width: auto;
+    left: 375px;
+    top: 1297px;
+  }
 }
 
-.mediquitous img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 53%;
+
+.career .right_05{
+
+  .dk {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 1242px;
+  }
+  
+  
+  .dk_2year {
+    position: absolute;
+    width: auto;
+    left: 706px;
+    top: 1382px;
+  }
+
+  .dk_01{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1242px;
+  }
+
+  .dk_02{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1282px;
+  }
+
+  .dk_03{
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1322px;
+  }
+
+  .dk_rank {
+    position: absolute;
+    width: auto;
+    left: 1300px;
+    top: 1377px;
+  }
 }
 
-.mediquitous img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 52%;
-}
 
-.mediquitous img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 17%;
-  top: 53%;
-}
 
-.mediquitous img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 51%;
-}
 
-.mediquitous img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 53%;
-}
 
-.mediquitous .mediquitous_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 52%;
-}
 
-.btg img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 57%;
-}
 
-.btg img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 56%;
-}
 
-.btg img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 17%;
-  top: 57%;
-}
-
-.btg img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 55%;
-}
-
-.btg img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 58%;
-}
-
-.btg .btg_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 57%;
-}
-
-.bonne img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 61.5%;
-}
-
-.bonne img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 60.5%;
-}
-
-.bonne img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 17%;
-  top: 61.5%;
-}
-
-.bonne img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 60%;
-}
-
-.bonne img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 62%;
-}
-
-.bonne .bonne_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 61%;
-}
-
-.dk img:nth-child(1) {
-  position: absolute;
-  width: auto;
-  left: 10%;
-  top: 66%;
-}
-
-.dk img:nth-child(2) {
-  position: absolute;
-  width: auto;
-  left: 24%;
-  top: 65%;
-}
-
-.dk img:nth-child(3) {
-  position: absolute;
-  width: auto;
-  left: 17%;
-  top: 66%;
-}
-
-.dk img:nth-child(4) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 64.5%;
-}
-
-.dk img:nth-child(5) {
-  position: absolute;
-  width: auto;
-  left: 34%;
-  top: 66%;
-}
-
-.dk .dk_1234 {
-  position: absolute;
-  width: auto;
-  left: 60%;
-  top: 65%;
-}
 
 .section03 {
-  height: 400vh;
-  background-color: white;
+  height: 600vh;
+  background-color: #050505;
 }
-
-.promotion img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  translate: -50% -50%;
-}
-
-/* .promotion img:nth-child(2) {
-  width: 36%;
-  position: absolute;
-  left: 50%;
-  top: 4.2%;
-  translate: -50% -50%;
-}
-
-.promotion img:nth-child(3) {
-  width: 20%;
-  position: absolute;
-  left: 16%;
-  top: 4.2%;
-  translate: -50% -50%;
-} */
-
-.micro img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  translate: -50% -50%;
-}
-
-/* .micro img:nth-child(2) {
-  width: 22%;
-  position: absolute;
-  left: 50%;
-  top: 17%;
-  translate: -50% -50%;
-}
-
-.micro img:nth-child(3) {
-  width: 23%;
-  position: absolute;
-  left: 16%;
-  top: 17%;
-  translate: -50% -50%;
-} */
-
-.website img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  translate: -50% -50%;
-}
-
-/* .website img:nth-child(2) {
-  width: 22%;
-  position: absolute;
-  left: 50%;
-  top: 27.5%;
-  translate: -50% -50%;
-}
-
-.website img:nth-child(3) {
-  width: 23%;
-  position: absolute;
-  left: 16%;
-  top: 27.5%;
-  translate: -50% -50%;
-} */
-
-.mobileapp img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-}
-
-/* .mobileapp img:nth-child(2) {
-  width: 42%;
-  position: absolute;
-  left: 50%;
-  top: 38.3%;
-  translate: -50% -50%;
-}
-
-.mobileapp img:nth-child(3) {
-  width: 20%;
-  position: absolute;
-  left: 16%;
-  top: 38%;
-  translate: -50% -50%;
-} */
-
-.portfolio img:nth-child(1) {
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  translate: -50% -50%;
-}
-
-/* .portfolio img:nth-child(2) {
-  width: 38%;
-  position: absolute;
-  left: 50%;
-  top: 48%;
-  translate: -50% -50%;
-}
-
-.portfolio img:nth-child(3) {
-  width: 20%;
-  position: absolute;
-  left: 16%;
-  top: 48%;
-  translate: -50% -50%;
-} */
 
 
