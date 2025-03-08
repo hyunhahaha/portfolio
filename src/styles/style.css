@@ -196,23 +196,37 @@ body {
       display: flex;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
+ 
 
-      .left{
-        flex: 1;
-        height: 280px;
+      img{
+        width: inherit;
+      }
+
+      & > div{
+        padding: 2rem;
+      }
+
+      & > div:nth-child(1){
+        width: 200px;
+      }
+      & > div:nth-child(2){
+        width: 200px;
+        text-align: right;
         border-right: 1px solid black;
       }
-
-      .right{
-        flex: 2;
-        height: 280px;
+      & > div:nth-child(3){
+        flex: 1;
       }
+      & > div:nth-child(4){
+        flex: 2;
+      }
+     
     }
   }
 }
 
 
-
+/* 
 
 .career .left_01{
   .fc_img {
@@ -617,18 +631,38 @@ body {
     top: 1377px;
   }
 }
+ */
 
 
 
 
 
 
-
-
+`
 
 .section03 {
   height: 600vh;
   background-color: #050505;
 }
+
+.section03 a {
+  display: block;
+  /* width: 100vw;
+  height: 66px;
+  position: absolute;
+  left: 0;
+  top: 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
