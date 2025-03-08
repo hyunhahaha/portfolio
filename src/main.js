@@ -1,4 +1,5 @@
 import "../lib/smooth";
+import "./matter";
 import "./styles/style.css";
 import { markers } from "../lib/smooth";
 
