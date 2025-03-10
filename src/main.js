@@ -56,7 +56,7 @@ ScrollTrigger.create({
   trigger: ".text",
   start: "2550px top",
   end: "+=1300",
-  markers:true,
+  // markers:true,
   pin: true,
   scrub: true,
 });
@@ -90,6 +90,8 @@ ScrollTrigger.create({
 
 
 
+
+
 /* 카테고리 고정시키기 */
 ScrollTrigger.create({
   trigger: ".category",
@@ -101,7 +103,7 @@ ScrollTrigger.create({
 });
 
 
-/* 카테고리 고정시키기 */
+
 ScrollTrigger.create({
   trigger: ".section01",
   start: "85%",
@@ -135,8 +137,8 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".bg_text",
-  start: "20px top",
-  end: "+=4400",
+  start: "30px top",
+  end: "+=5100",
   markers:true,
   // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   // pinSpacing:false,
@@ -158,7 +160,7 @@ gsap.utils.toArray('.promotion').forEach((item,index)=>{
     end:'bottom bottom',
     pin: true,
     pinSpacing: false,
-    markers: true,
+    // markers: true,
     snap:{
       snapTo: 1,
       duration:0.3,

@@ -31,7 +31,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 7%;
+  top: 6%;
   width: 326px;
   height: 285px;
   /* align-items: center; */
@@ -59,7 +59,19 @@ body {
 }
 
 
+.text_keywords{
+  position: relative;
+  left: 10%;
+  bottom: 0;
+  img{
+    width: inherit;
+  }
+}
+
 .category{
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 500px;
   height: 500px;
   background-color: green;
@@ -68,7 +80,11 @@ body {
   flex-direction: column;
   list-style: none;
   li{
-    width: 30%;
+    width: auto;
+    height: inherit;
+  }
+  img{
+    width: inherit;
   }
 }
 
@@ -111,7 +127,7 @@ body {
 .color {
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 14.5%;
   translate:-50% 0;
   display: flex;
   gap: 20px;
@@ -150,14 +166,20 @@ body {
 
 .section02 {
   position: relative;
-  height: 720vh;
+  height: 860vh;
   background-color: #fff;
 
+
+  .bg_text{
+    img{
+      padding-bottom: 250px;
+    }
+  }
 
   .img_6{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     translate:-50% -50%;
     width: 90%;
   }
@@ -165,18 +187,20 @@ body {
 
 
 .career_container{
-  .career_text{
-    position: absolute;
-    width: auto;
-    top: 5690px;
-    left: 80px;
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  top: 4%;
+  padding-bottom: 30px;
+    translate:0% -50%;
+    justify-content: center;
+  img{
+    width: inherit;
   }
-
-  .career_date{
-    position: absolute;
-    width: auto;
-    top: 5640px;
-    right: 80px;
+  & > div:nth-child(1){
+    padding-right: 1060px;
   }
 }
 
@@ -208,437 +232,67 @@ body {
 
       & > div:nth-child(1){
         width: 200px;
+        padding-left: 60px;
+        
       }
+
       & > div:nth-child(2){
         width: 200px;
         text-align: right;
         border-right: 1px solid black;
+        & > div:nth-child(1){
+          padding-top: 7px;
+          padding-bottom: 15px;
+        }
       }
+
       & > div:nth-child(3){
         flex: 1;
+        & > div:nth-child(1){
+          padding-top: 7px;
+          padding-bottom: 124px;
+        }
       }
+
       & > div:nth-child(4){
-        flex: 2;
+        flex: 1;
+        .number{
+          padding: 5px;
+        }
+
+        .line{
+          padding-left: 17px;
+        }
+
+        .mline{
+          padding-left: 61px;
+        }
+
+        .dline{
+          padding-left: 149px;
+        }
+
+        
+
+        .rank{
+          padding-top: 64px;
+          padding-left: 5px;
+        }
       }
-     
+
+     }
     }
   }
-}
-
-
-/* 
-
-.career .left_01{
-  .fc_img {
-    position: absolute;
-    width: auto;
-    left: 80px;
-    top: 52px;
-  }
-  
-  
-  .fc_202408 {
-    position: absolute;
-    width: auto;
-    left: 400px;
-    top: 58px;
-  }
-  
-  
-  .fc_ing {
-    position: absolute;
-    width: auto;
-    left: 476px;
-    top: 109px;
-  }
-}
-
-
-.section02 .career .right_01{
-
-  .fourcompany {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 58px;
-  }
-  
-  
-  .fc_6month {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 201px;
-  }
-
-  .fourcompany_01{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 50px;
-  }
-
-  .fourcompany_02{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 92px;
-  }
-
-  .fourcompany_03{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 132px;
-  }
-
-  .fourcompany_04{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 172px;
-  }
-
-  .fc_rank {
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 222px;
-  }
-}
-
-
-.section02 .career .left_02{
-  .mq_img {
-    position: absolute;
-    width: auto;
-    left: 80px;
-    top: 342px;
-  }
-
-
-  .mq_202203 {
-    position: absolute;
-    width: auto;
-    left: 400px;
-    top: 342px;
-  }
-  
-  
-  .mq_202408 {
-    position: absolute;
-    width: auto;
-    left: 375px;
-    top: 397px;
-  }
-
-    .fourcompany {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 58px;
-  }
-  
-  
-  .month_6 {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 201px;
-  }
-}
-
-
-.section02 .career .right_02{
-
-  .mediquitous {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 342px;
-  }
-  
-  
-  .mq_2year {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 491px;
-  }
-
-
-  .mediquitous_01{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 342px;
-  }
-
-  .mediquitous_02{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 382px;
-  }
-
-  .mediquitous_03{
-    position: absolute;
-    width: auto;
-    left: 1355px;
-    top: 422px;
-  }
-
-  .mediquitous_04{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 462px;
-  }
-
-  .mq_rank{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 512px;
-  }
-}
-
-
-
-.section02 .career .left_03{
-  .btg_img {
-    position: absolute;
-    width: auto;
-    left: 80px;
-    top: 642px;
-  }
-  
-  
-  .btg_202108 {
-    position: absolute;
-    width: auto;
-    left: 400px;
-    top: 645px;
-  }
-  
-  
-  .btg_202201 {
-    position: absolute;
-    width: auto;
-    left: 375px;
-    top: 700px;
-  }
-}
-
-
-.career .right_03{
-
-  .btg {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 640px;
-  }
-  
-  
-  .btg_6month {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 780px;
-  }
-
-  .btg_01{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 640px;
-  }
-
-  .btg_02{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 680px;
-  }
-
-  .btg_03{
-    position: absolute;
-    width: auto;
-    left: 1312px;
-    top: 720px;
-  }
-
-  .btg_rank {
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 774px;
-  }
-}
-
-
-
-.section02 .career .left_04{
-  .tis_img {
-    position: absolute;
-    width: auto;
-    left: 80px;
-    top: 942px;
-  }
-  
-  
-  .tis_202012 {
-    position: absolute;
-    width: auto;
-    left: 400px;
-    top: 945px;
-  }
-  
-  
-  .tis_202108 {
-    position: absolute;
-    width: auto;
-    left: 375px;
-    top: 1000px;
-  }
-}
-
-
-.career .right_04{
-
-  .bonne {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 940px;
-  }
-  
-  
-  .bonne_9month {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 1080px;
-  }
-
-  .bonne_01{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 940px;
-  }
-
-  .bonne_02{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 980px;
-  }
-
-  .bonne_03{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1020px;
-  }
-
-  .bonne_04{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1060px;
-  }
-
-  .bonne_rank {
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1110px;
-  }
-}
-
-
-
-.section02 .career .left_05{
-  .dk_img {
-    position: absolute;
-    width: auto;
-    left: 80px;
-    top: 1242px;
-  }
-  
-  
-  .dk_201803 {
-    position: absolute;
-    width: auto;
-    left: 400px;
-    top: 1242px;
-  }
-  
-  
-  .dk_202004 {
-    position: absolute;
-    width: auto;
-    left: 375px;
-    top: 1297px;
-  }
-}
-
-
-.career .right_05{
-
-  .dk {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 1242px;
-  }
-  
-  
-  .dk_2year {
-    position: absolute;
-    width: auto;
-    left: 706px;
-    top: 1382px;
-  }
-
-  .dk_01{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1242px;
-  }
-
-  .dk_02{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1282px;
-  }
-
-  .dk_03{
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1322px;
-  }
-
-  .dk_rank {
-    position: absolute;
-    width: auto;
-    left: 1300px;
-    top: 1377px;
-  }
-}
- */
 
 
 
 
 
 
-`
+
+
+
+
 
 .section03 {
   height: 600vh;
