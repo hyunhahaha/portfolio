@@ -117,17 +117,6 @@ ScrollTrigger.create({
 
 
 
-/* 키워드 텍스트 고정시키기 */
-ScrollTrigger.create({
-  trigger: ".scene02",
-  start: "2900px top",
-  end: "+=1100",
-  markers:true,
-  // animation:gsap.to('.text_keywords',{ scale:1,y:'-400%' }),
-  pin: true,
-  scrub: true,
-});
-
 
 
 
@@ -156,6 +145,18 @@ ScrollTrigger.create({
   // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   // pinSpacing:false,
   pin: true,
+  scrub: true,
+});
+
+
+ScrollTrigger.create({
+  trigger: ".career",
+  start: "top center",
+  end: "+=400",
+  // markers:true,
+  animation:gsap.from('.ani',{ y:30,opacity:0,stagger:0.1 }),
+  // pinSpacing:false,
+  // pin: true,
   scrub: true,
 });
 

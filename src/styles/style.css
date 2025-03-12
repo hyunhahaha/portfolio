@@ -60,9 +60,11 @@ body {
 
 
 .text_keywords{
-  position: relative;
-  left: 10%;
-  top: 0%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+
   img{
     width: inherit;
   }
@@ -70,8 +72,6 @@ body {
 
 .category{
   position: relative;
-  left: 0;
-  bottom: 0;
   width: 500px;
   height: 500px;
   background-color: green;
