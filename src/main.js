@@ -117,6 +117,19 @@ ScrollTrigger.create({
 
 
 
+/* 키워드 텍스트 고정시키기 */
+ScrollTrigger.create({
+  trigger: ".scene02",
+  start: "2900px top",
+  end: "+=1100",
+  markers:true,
+  // animation:gsap.to('.text_keywords',{ scale:1,y:'-400%' }),
+  pin: true,
+  scrub: true,
+});
+
+
+
 
 
 /* section1-1 card animation  */
@@ -139,7 +152,7 @@ ScrollTrigger.create({
   trigger: ".bg_text",
   start: "30px top",
   end: "+=5100",
-  markers:true,
+  // markers:true,
   // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   // pinSpacing:false,
   pin: true,

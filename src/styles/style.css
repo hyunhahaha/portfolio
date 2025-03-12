@@ -62,7 +62,7 @@ body {
 .text_keywords{
   position: relative;
   left: 10%;
-  bottom: 0;
+  top: 0%;
   img{
     width: inherit;
   }
