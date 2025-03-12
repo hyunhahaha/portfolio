@@ -134,6 +134,7 @@ body {
   width: 90%;
 }
 
+
 .color > li{
   opacity: 0;
   filter: blur(5px);
