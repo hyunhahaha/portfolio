@@ -149,11 +149,13 @@ ScrollTrigger.create({
 });
 
 
+
+
 ScrollTrigger.create({
   trigger: ".career",
   start: "top center",
-  end: "+=400",
-  // markers:true,
+  end: "+=1200",
+  markers:true,
   animation:gsap.from('.ani',{ y:30,opacity:0,stagger:0.1 }),
   // pinSpacing:false,
   // pin: true,
