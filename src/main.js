@@ -176,14 +176,7 @@ gsap.utils.toArray('.promotion').forEach((item,index)=>{
     end:'bottom bottom',
     pin: true,
     pinSpacing: false,
-    // markers: true,
-    snap:{
-      snapTo: 1,
-      duration:0.3,
-      ease: "power1.inOut"
-    },
-    // snap: section - 
-    // scrub: true,
+
   })
 })
 

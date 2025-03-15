@@ -10,7 +10,8 @@ body {
   position: fixed;
   left: 50%;
   transform:translateX(-50%) scale(0.2);
-  bottom: -1%;
+  /* bottom: -1%; */
+  top:700px;
   width: 36%;
   z-index: 10000;
   pointer-events: none;
