@@ -54,9 +54,9 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".text",
-  start: "2550px top",
+  start: "2510px top",
   end: "+=1300",
-  // markers:true,
+  markers:true,
   pin: true,
   scrub: true,
 });
@@ -155,7 +155,7 @@ ScrollTrigger.create({
   trigger: ".career",
   start: "top center",
   end: "+=1200",
-  markers:true,
+  // markers:true,
   animation:gsap.from('.ani',{ y:30,opacity:0,stagger:0.1 }),
   // pinSpacing:false,
   // pin: true,

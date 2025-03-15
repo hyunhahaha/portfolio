@@ -11,7 +11,7 @@ body {
   left: 50%;
   transform:translateX(-50%) scale(0.2);
   /* bottom: -1%; */
-  top:700px;
+  top:805px;
   width: 36%;
   z-index: 10000;
   pointer-events: none;
@@ -168,7 +168,7 @@ body {
 
 .section02 {
   position: relative;
-  height: 860vh;
+  height: 940vh;
   background-color: #fff;
 
 
