@@ -1,8 +1,8 @@
 import "../lib/smooth";
-import "./matter";
 import "./styles/style.css";
 import { markers } from "../lib/smooth";
-
+import { Runner,runner
+  ,engine,tl as barTl} from "./matter";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import { Draggable } from "gsap/Draggable";
@@ -95,10 +95,14 @@ ScrollTrigger.create({
 /* 카테고리 고정시키기 */
 ScrollTrigger.create({
   trigger: ".category",
-  start: "top center",
+  start: "top top",
   end: "+=1500",
   pin: true,
   // markers:true,
+  onEnter(){
+    engine.world.gravity.y = 1
+    barTl.play();
+  },  
   scrub: true,
 });
 
