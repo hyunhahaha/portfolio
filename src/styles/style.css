@@ -1,4 +1,4 @@
-img{
+img {
   width: 100%;
 }
 
@@ -6,12 +6,12 @@ body {
   overflow: hidden;
 }
 
-.title{
+.title {
   position: fixed;
   left: 50%;
-  transform:translateX(-50%) scale(0.2);
+  transform: translateX(-50%) scale(0.2);
   /* bottom: -1%; */
-  top:730px;
+  top: 730px;
   width: 36%;
   z-index: 10000;
   pointer-events: none;
@@ -48,70 +48,55 @@ body {
   }
 }
 
-.scene02{
+.scene02 {
   padding-top: 50rem;
 }
-.scene02 .text{
+.scene02 .text {
   text-align: center;
   /* width: fit-content; */
   width: 50%;
   margin: 0 auto 80rem;
-  
 }
 
-
-.text_keywords{
+.text_keywords {
   position: absolute;
   left: 0;
   top: 0;
 
-
-  img{
+  img {
     width: inherit;
   }
 }
 
-.category{
-  position: relative;
-  width: 500px;
-  height: 500px;
-  background-color: green;
-  margin: 0 auto;
+.category {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: green; */
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
-  list-style: none;
-  li{
-    width: auto;
-    height: inherit;
-  }
-  img{
-    width: inherit;
-  }
 }
-
 
 .body {
   position: relative;
 
-  .title{
-    transform:scale(0.2)
+  .title {
+    transform: scale(0.2);
   }
 
-
-  .text{
+  .text {
     width: 30%;
     position: absolute;
     left: 50%;
     top: 120%;
-    translate:-50% -50%;
-    .title{
-      transform:scale(1)
+    translate: -50% -50%;
+    .title {
+      transform: scale(1);
     }
   }
-
 }
 
-.section1-1{
+.section1-1 {
   background-color: #050505;
   height: 200vh;
   padding-bottom: 300px;
@@ -129,66 +114,55 @@ body {
   position: absolute;
   left: 50%;
   top: 14.5%;
-  translate:-50% 0;
+  translate: -50% 0;
   display: flex;
   gap: 20px;
   width: 90%;
 }
 
-
-.color > li{
+.color > li {
   opacity: 0;
   filter: blur(5px);
-  transform:translateY(200px)
+  transform: translateY(200px);
 }
 
-
-.color > li:nth-child(2){
+.color > li:nth-child(2) {
   margin-top: 16rem;
 }
 
-
-.color > li:nth-child(3){
+.color > li:nth-child(3) {
   margin-top: 2rem;
 }
 
-
-.color > li:nth-child(4){
+.color > li:nth-child(4) {
   margin-top: 20rem;
 }
 
-
-.color > li:nth-child(5){
+.color > li:nth-child(5) {
   margin-top: 3rem;
 }
-
-
-
-
 
 .section02 {
   position: relative;
   height: 1005vh;
   background-color: #fff;
 
-
-  .bg_text{
-    img{
+  .bg_text {
+    img {
       padding-bottom: 250px;
     }
   }
 
-  .img_6{
+  .img_6 {
     position: absolute;
     left: 50%;
     top: 40%;
-    translate:-50% -50%;
+    translate: -50% -50%;
     width: 90%;
   }
 }
 
-
-.career_container{
+.career_container {
   display: flex;
   align-items: flex-end;
   width: 100vw;
@@ -196,107 +170,88 @@ body {
   left: 0;
   top: 4%;
   padding-bottom: 10px;
-    translate:0% -50%;
-    justify-content: center;
-  img{
+  translate: 0% -50%;
+  justify-content: center;
+  img {
     width: inherit;
   }
-  & > div:nth-child(1){
+  & > div:nth-child(1) {
     padding-right: 760px;
   }
 }
 
-
-.career{
+.career {
   width: 100vw;
   position: relative;
   left: 0;
   bottom: 0;
   margin-top: 300px;
-  
 
-  ul{
-
-    li{
-
+  ul {
+    li {
       display: flex;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
- 
 
-      img{
+      img {
         width: inherit;
       }
 
-      & > div{
+      & > div {
         padding: 2rem;
       }
 
-      & > div:nth-child(1){
+      & > div:nth-child(1) {
         width: 200px;
         padding-left: 60px;
-        
       }
 
-      & > div:nth-child(2){
+      & > div:nth-child(2) {
         width: 200px;
         text-align: right;
         border-right: 1px solid black;
-        & > div:nth-child(1){
+        & > div:nth-child(1) {
           padding-top: 7px;
           padding-bottom: 15px;
         }
       }
 
-      & > div:nth-child(3){
+      & > div:nth-child(3) {
         flex: 1;
-        & > div:nth-child(1){
+        & > div:nth-child(1) {
           padding-top: 7px;
           padding-bottom: 124px;
         }
       }
 
-      & > div:nth-child(4){
+      & > div:nth-child(4) {
         width: 200px;
         padding-right: 265px;
         flex: 1;
-        .number{
+        .number {
           padding: 5px;
         }
 
-        .line{
+        .line {
           padding-left: 17px;
         }
 
-        .mline{
+        .mline {
           padding-left: 61px;
         }
 
-        .dline{
+        .dline {
           padding-left: 149px;
         }
 
-        
-
-        .rank{
+        .rank {
           padding-top: 64px;
           padding-left: 5px;
         }
       }
-
-     }
     }
   }
-
-
-
-
-
-
-
-
-
-
+}
 
 .section03 {
   height: 600vh;
@@ -311,16 +266,3 @@ body {
   left: 0;
   top: 0; */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
