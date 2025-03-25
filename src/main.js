@@ -140,9 +140,19 @@ gsap.utils.toArray(".promotion").forEach((item, index) => {
     start: `-${70 * index}px top`,
     endTrigger: ".section03",
     end: "bottom bottom",
+      markers:true,
     pin: true,
     pinSpacing: false,
   });
 });
+
+
+
+
+
+
+
+
+
 
 markers();
