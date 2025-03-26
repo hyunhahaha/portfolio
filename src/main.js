@@ -121,6 +121,7 @@ ScrollTrigger.create({
   scrub: true,
 });
 
+
 ScrollTrigger.create({
   trigger: ".career",
   start: "top center",

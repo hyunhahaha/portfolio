@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "gsap": "3.12.7",
+    "matter-js": "^0.20.0",
     "smooth-scrollbar": "8.8.4"
   }
 }
