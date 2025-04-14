@@ -32,8 +32,8 @@ tl.from(".card_container .right", { x: right }, "<");
 /* 카드 고정시키기 & About 커지기 */
 ScrollTrigger.create({
   trigger: ".card_container",
-  start: "2800px top",
-  end: "+=1100",
+  start: "2600px top",
+  end: "+=1400",
   // markers:true,
   animation: gsap.to(".title", { scale: 1, y: "-400%" }),
   pin: true,
@@ -42,7 +42,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".text",
-  start: "2510px top",
+  start: "2310px top",
   end: "+=1300",
   // markers: true,
   pin: true,
@@ -112,8 +112,8 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".bg_text",
-  start: "30px top",
-  end: "+=5100",
+  start: "80px top",
+  end: "+=5600",
   // markers:true,
   // animation:gsap.to('.title',{ scale:1,y:'-400%' }),
   // pinSpacing:false,
@@ -124,7 +124,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".career",
-  start: "top center",
+  start: "20vw center",
   end: "+=1200",
   // markers:true,
   animation: gsap.from(".ani", { y: 30, opacity: 0, stagger: 0.1 }),
@@ -138,7 +138,7 @@ ScrollTrigger.create({
 gsap.utils.toArray(".promotion").forEach((item, index) => {
   ScrollTrigger.create({
     trigger: item,
-    start: `-${70 * index}px top`,
+    start: `-${100 * index}px top`,
     endTrigger: ".section03",
     end: "bottom bottom",
       markers:true,

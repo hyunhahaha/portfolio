@@ -11,7 +11,7 @@ body {
   left: 50%;
   transform: translateX(-50%) scale(0.2);
   /* bottom: -1%; */
-  top: 730px;
+  top: 45vw;
   width: 36%;
   z-index: 10000;
   pointer-events: none;
@@ -32,7 +32,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 5.7%;
+  top: 34vw;
   width: 326px;
   height: 285px;
   /* align-items: center; */
@@ -119,6 +119,7 @@ body {
   display: flex;
   gap: 20px;
   width: 90%;
+  justify-content: center;
 }
 
 .color > li {
@@ -145,7 +146,7 @@ body {
 
 .section02 {
   position: relative;
-  height: 1005vh;
+  height: 805vh;
   background-color: #fff;
 
   .bg_text {
@@ -157,7 +158,7 @@ body {
   .img_6 {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 30%;
     translate: -50% -50%;
     width: 90%;
   }
@@ -169,7 +170,7 @@ body {
   width: 100vw;
   position: relative;
   left: 0;
-  top: 4%;
+  top: 12vw;
   padding-bottom: 10px;
   translate: 0% -50%;
   justify-content: center;
@@ -177,7 +178,7 @@ body {
     width: inherit;
   }
   & > div:nth-child(1) {
-    padding-right: 760px;
+    padding-right: 42vw;
   }
 }
 
@@ -227,7 +228,7 @@ body {
 
       & > div:nth-child(4) {
         width: 200px;
-        padding-right: 265px;
+        padding-right: 27px;
         flex: 1;
         .number {
           padding: 5px;
@@ -255,7 +256,7 @@ body {
 }
 
 .section03 {
-  height: 600vh;
+  height: 550vh;
   background-color: #050505;
 }
 
