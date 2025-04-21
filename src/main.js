@@ -42,7 +42,7 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
   trigger: ".text",
-  start: "2310px top",
+  start: "300vh top",
   end: "+=1300",
   // markers: true,
   pin: true,
@@ -138,10 +138,10 @@ ScrollTrigger.create({
 gsap.utils.toArray(".promotion").forEach((item, index) => {
   ScrollTrigger.create({
     trigger: item,
-    start: `-${100 * index}px top`,
+    start: `-${90 * index}px top`,
     endTrigger: ".section03",
     end: "bottom bottom",
-      markers:true,
+      // markers:true,
     pin: true,
     pinSpacing: false,
   });
