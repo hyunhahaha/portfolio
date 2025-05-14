@@ -13,11 +13,24 @@ body {
   position: fixed;
   left: 50%;
   transform: translateX(-50%) scale(0.2);
-  /* bottom: -1%; */
-  top: 44vw;
+  top: 44vw; /* 기본값 */
   width: 36vw;
   z-index: 10000;
   pointer-events: none;
+}
+
+/* 맥북 14인치 (1512px 이하) */
+@media (max-width: 1512px) {
+  .title {
+    top: 48.5vw;
+  }
+}
+
+/* 32인치 모니터용 (1600px 이상) */
+@media (min-width: 1600px) {
+  .title {
+    top: 44vw;
+  }
 }
 
 .section01 {
@@ -35,7 +48,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 34vw;
+  top: 34vw;  /* 기본값 */
   width: 326px;
   height: 285px;
   /* align-items: center; */
@@ -48,6 +61,21 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+  }
+}
+
+
+/* 맥북 14인치 (1512px 이하) */
+@media (max-width: 1512px) {
+  .section01 .card_container {
+    top: 31vw;
+  }
+}
+
+/* 32인치 모니터용 (1600px 이상) */
+@media (min-width: 1600px) {
+  .section01 .card_container {
+    top: 34vw;
   }
 }
 
@@ -167,6 +195,22 @@ body {
   }
 }
 
+/* 👉 맥북 14인치 (1512px 이하) */
+@media (max-width: 1512px) {
+  .section02 {
+    height: 1080vh;
+  }
+}
+
+/* 👉 32인치 모니터 (1600px 이상) */
+@media (min-width: 1600px) {
+  .section02 {
+    height: 770vh;
+  }
+}
+
+
+
 .career_container {
   display: flex;
   align-items: flex-end;
@@ -174,16 +218,37 @@ body {
   position: relative;
   left: 0;
   top: 12vw;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+  padding-left: 12.7vw;
   translate: 0% -50%;
-  justify-content: center;
+  /* justify-content: center; */
   img {
     width: inherit;
   }
   & > div:nth-child(1) {
-    padding-right: 42vw;
+    padding-right: 46vw;
   }
 }
+
+/* 👉 맥북 14인치 (1512px 이하) */
+@media (max-width: 1512px) {
+  .career_container {
+    /* padding-bottom: 4px; */
+      /* justify-content: center; */
+    padding-left: 5vw;
+    & > div:nth-child(1) {
+      padding-right: 48vw;
+    }
+  }
+}
+
+/* 👉 32인치 모니터 (1600px 이상) */
+@media (min-width: 1600px) {
+  .career_container {
+    height: 770vh;
+  }
+}
+
 
 .career {
   width: 100vw;
@@ -233,6 +298,7 @@ body {
         width: 200px;
         padding-right: 27px;
         flex: 1;
+
         .number {
           padding: 5px;
         }
@@ -253,10 +319,34 @@ body {
           padding-top: 64px;
           padding-left: 5px;
         }
+
+        @media (max-width: 1512px) {
+          padding-right: 280px;
+        }
+
+        @media (min-width: 1600px) {
+          padding-right: 40px;
+        }
       }
     }
   }
 }
+
+
+/* 👉 맥북 14인치 (1512px 이하) */
+@media (max-width: 1512px) {
+  .career {
+    margin-top: 180px;
+  }
+}
+
+/* 👉 32인치 모니터 (1600px 이상) */
+@media (min-width: 1600px) {
+  .career {
+    margin-top: 300px;
+  }
+}
+
 
 .section03 {
   height: 550vh;
