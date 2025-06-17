@@ -59,7 +59,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   top: 34vw;  /* 기본값 */
-  width: 326px;
+  width: 322px;
   height: 285px;
   /* align-items: center; */
   /* width: 2282px; */
@@ -96,7 +96,7 @@ a:hover {
 /* 맥북 14인치 (1512px 이하) */
 @media (max-width: 1512px) {
   .section01 .card_container {
-    top: 31vw;
+    top: 28vw;
   }
 }
 
